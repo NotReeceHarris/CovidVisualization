@@ -5,9 +5,8 @@
 
   <br>
   <br>
-  <span>An all-in-one crypto currency tool kit, get up to date stats <br>
-  and predictions with our easy-to-use tools such as akc (Api key chain), <br>
-  lex (Prediction module), and much more.<br></span>
+  <span>About
+A simple yet affective visualisation for the latest covid-19 data</span>
   <br>
   <a target="_blank" href="https://www.python.org/downloads/" title="Python version"><img src="https://img.shields.io/badge/python-%3E=_3.8-green.svg"></a>
   <a target="_blank" href="https://www.python.org/downloads/" title="Python version"><img src="https://img.shields.io/badge/Flask-%3E=_1.1.2-green.svg"></a>
