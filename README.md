@@ -13,6 +13,4 @@ A simple yet affective visualisation for the latest covid-19 data</span>
   
 </p>
 
-<video width="320" height="240" controls>
-  <source src="https://i.gyazo.com/1eb2cc8d8d3101e5f556df9f71fb89a1.mp" type="video/mp4">
-</video>
+<img src="https://github.com/NotReeceHarris/CovidVisualization/blob/main/ezgif-1-be42428c95fc.gif?raw=true"/>
