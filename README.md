@@ -15,5 +15,4 @@ A simple yet affective visualisation for the latest covid-19 data</span>
 
 <video width="320" height="240" controls>
   <source src="https://i.gyazo.com/1eb2cc8d8d3101e5f556df9f71fb89a1.mp" type="video/mp4">
-Your browser does not support the video tag.
 </video>
