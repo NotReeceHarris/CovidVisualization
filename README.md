@@ -14,5 +14,5 @@ A simple yet affective visualisation for the latest covid-19 data</span>
 </p>
 
 <center>
-<img src="https://github.com/NotReeceHarris/CovidVisualization/blob/main/ezgif-1-be42428c95fc.gif?raw=true"/>
+<img src="https://github.com/NotReeceHarris/CovidVisualization/blob/main/ezgif-1-be42428c95fc.gif?raw=true" width="100%"/>
 <center/>
