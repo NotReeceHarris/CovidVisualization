@@ -1,7 +1,7 @@
 
 <p align=center>
 
-  <img src="https://i.imgur.com/evA6BWS.png" alt="CryptoniteData v2.0.0" />
+  <img src="https://i.imgur.com/LzrJy0L.png" alt="CovidVisualisation" />
 
   <br>
   <br>
