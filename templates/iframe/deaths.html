@@ -1,0 +1,101 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    {% for x in data["Countries"] %}
+    {% if x["ID"] == _id %}
+    <script>
+window.onload = function () {
+
+var chart = new CanvasJS.Chart("confirmContainer", {
+	exportEnabled: true,
+	animationEnabled: true,
+    theme: "dark1", // "light1", "light2", "dark1", "dark2"
+	backgroundColor: "rgb(42, 42, 42, 0)",
+	title:{
+		text: "Confirmed Deaths"
+	},
+	subtitles: [{
+		text: "{{x['Country']}}"
+	}], 
+	axisX: {
+		title: ""
+	},
+	axisY: {
+		title: "Total",
+		titleFontColor: "#4F81BC",
+		lineColor: "#4F81BC",
+		labelFontColor: "#4F81BC",
+		tickColor: "#4F81BC",
+		includeZero: true
+	},
+	axisY2: {
+		title: "New",
+		titleFontColor: "#C0504E",
+		lineColor: "#C0504E",
+		labelFontColor: "#C0504E",
+		tickColor: "#C0504E",
+		includeZero: true
+	},
+	toolTip: {
+		shared: true
+	},
+	legend: {
+		cursor: "pointer",
+		itemclick: toggleDataSeries
+	},
+	data: [{
+		type: "column",
+		name: "Total",
+		showInLegend: true,      
+		yValueFormatString: "#,##0.# cases",
+		dataPoints: [
+			{ label: "Total Deaths",  y: {{x["TotalDeaths"]}} }
+		]
+	},
+	{
+		type: "column",
+		name: "New",
+		axisYType: "secondary",
+		showInLegend: true,
+		yValueFormatString: "#,##0.# cases",
+		dataPoints: [
+			{ label: "New Deaths", y: {{x["NewDeaths"]}} }
+		]
+	}]
+});
+chart.render();
+
+function toggleDataSeries(e) {
+	if (typeof (e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+		e.dataSeries.visible = false;
+	} else {
+		e.dataSeries.visible = true;
+	}
+	e.chart.render();
+}
+
+}
+        </script>
+{% endif %}
+{% endfor %}
+
+</head>
+<style>
+		.canvasjs-chart-credit {
+			text-indent: -9999px;
+		}
+		
+		button {
+			margin-left: 100000000px;
+		}
+	</style>
+<body style="background-color: rgb(42, 42, 42, 0);">
+    <div id="confirmContainer" style="height: 370px; width: 100%; background-color: rgb(250, 250, 250, 0);"></div>
+</body>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</html>
